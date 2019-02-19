@@ -20,7 +20,8 @@ namespace FlightReservationAspNetCore.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            var flights = _flightRepository.GetAllFlights();
+            return View(flights);
         }
     }
 }

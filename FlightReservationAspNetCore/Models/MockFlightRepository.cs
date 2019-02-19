@@ -27,7 +27,6 @@ namespace FlightReservationAspNetCore.Models
                 new Flight { departure = DateTime.Now, arrival = DateTime.Today, distance = 344, from = "WAW", destination = "BER", flightId = 4},
                 new Flight { departure = DateTime.Now, arrival = DateTime.Today, distance = 454, from = "WAW", destination = "ROM", flightId = 5 },
             };
-            throw new NotImplementedException();
         }
 
         public IEnumerable<Flight> GetAllFlights()
