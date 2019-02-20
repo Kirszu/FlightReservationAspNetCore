@@ -1,21 +1,11 @@
-﻿@model IEnumerable<FlightReservationAspNetCore.Models.Flight>
+﻿@model FlightReservationAspNetCore.ViewModels.HomeViewModel
 
-<!DOCTYPE html>
-
-<html>
-<head>
-        <meta name="viewport" content="width=device-width" />
-
-</head>
-<body>
-     @foreach(var flight in Model)
-     {
+@foreach(var flight in Model.Flights)
+{
     <div>
         <h2>@flight.flightId</h2>
         <h2>@flight.arrival</h2>
         <h2>@flight.departure</h2>
         <h2>@flight.from:@flight.destination</h2>
     </div>
-     }
-</body>
-</html>
+}
