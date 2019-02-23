@@ -13,6 +13,6 @@ namespace FlightReservationAspNetCore.Models
         public string from { get; set; }
         public string destination { get; set; }
         public int flightId { get; set; }
-        //public IPlane plane { get; set; }
+        public IPlane plane { get; set; }
     }
 }
